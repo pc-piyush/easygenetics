@@ -1,0 +1,25 @@
+library(easygenetics)
+?system.file
+library(easygenetics)
+library(easygenetics)
+easygenetics()
+?runApp
+library(easygenetics)
+library(easygenetics)
+?system.file
+devtools::load_all(".")
+library(easygenetics)
+library(easygenetics)
+launch_app()
+shiny::runApp('Desktop/Genetics Final Project/geneproject')
+runApp('R')
+library(easygenetics)
+launch_app()
+library(easygenetics)
+library(easygenetics)
+launch_app()
+?system.file
+library(easygenetics)
+launch_app()
+library(easygenetics)
+launch_app()

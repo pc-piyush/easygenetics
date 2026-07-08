@@ -1,0 +1,31 @@
+library(shiny)
+library(bslib)
+library(ggplot2)
+library(thematic)
+library(showtext)
+library(patchwork)
+library(glue)
+
+setwd("S:/Epi HST Staff/Data Management and Analysis/Martin-Spring 2020/Files")
+data1 <- read.csv("owid-covid-data_5_countries.csv", header = TRUE)
+
+# Builds theme object to be supplied to ui
+my_theme <- bs_theme(
+  bootswatch = "cerulean",
+  base_font = font_google("Righteous")
+) %>%
+  bs_add_rules(sass::sass_file("styles.scss"))
+
+# Let thematic know to use the font from bs_lib
+thematic_shiny(font = "auto")
+
+ui <- fluidPage(
+  theme = my_theme,
+  div(id = "page-top",
+      radioButtons("current_theme", "App Theme:", c("Light" = "cerulean", "Dark" = "darkly"), inline = TRUE),
+      div(class = "source_link", a(href = "https://github.com/rstudio/shiny_app_stories/blob/master/weather_lookup/", "View source code on github", icon("github"))),
+ 
+server <- function(input, output) {}
+
+# Run the application
+shinyApp(ui = ui, server = server)

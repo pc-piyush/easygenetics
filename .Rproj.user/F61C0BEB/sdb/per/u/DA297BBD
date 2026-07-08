@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' @export\n#' \n#' \n#' \n#' \n#' \n\n",
+    "created" : 1524412067199.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "3380469147",
+    "id" : "DA297BBD",
+    "lastKnownWriteTime" : 5489670665137827699,
+    "last_content_update" : 1524412093674,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

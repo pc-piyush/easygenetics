@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' @export\n\nlaunch_app <- function() {\n  #shiny::runApp(\"easygenetics\", \"easygenetics\")\n  #runApp('R')\n   shiny::runApp(system.file('shinyApp', package='easygenetics'))\n}\n",
+    "created" : 1524411737926.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3105212564",
+    "id" : "861B3852",
+    "lastKnownWriteTime" : 1524425657,
+    "last_content_update" : 1524425657676,
+    "path" : "~/Desktop/Genetics Final Project/easygenetics/R/launch_app.R",
+    "project_path" : "R/launch_app.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
