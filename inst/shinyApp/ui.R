@@ -9,8 +9,9 @@
 
 library(shiny)
 library(shinydashboard)
+library(shinydashboardPlus)
 
-header<-dashboardHeader(title = HTML(paste(icon('flask'),'Easy Genetics')) ,
+header<-dashboardHeader(title = HTML(paste(icon('dna'),'Easy Genetics')) ,
                         dropdownMenuOutput("messageMenu")
 )
 
@@ -341,5 +342,23 @@ sidebar <- dashboardSidebar(
 ui <- dashboardPage(skin = "black",
               header,
               sidebar,
+            footer = dashboardFooter(
+                #left = "By Divad Nojnarg",
+              left = tagList(
+                "Created by ",
+                tags$a(
+                  href = "https://csammons7.wordpress.com",
+                  target = "_blank",
+                  "Candice Sammons"
+                ),
+                "and ",
+                tags$a(
+                  href = "https://pc-piyush.github.io",
+                  target = "_blank",
+                  "Piyush Chaudhari"
+                ),
+              ),
+                right = "© 2018"
+              ),
               body
 )
